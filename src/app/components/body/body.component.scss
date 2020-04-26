@@ -1,0 +1,25 @@
+.layout{
+    background-image: url('src/assets/worship.jpg');
+}
+.ancla-body{
+    // background-color: blue;
+    height: 1000px;
+    @font-face {
+        font-family: 'CMGSans';
+        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    }
+}
+.ancla-header{
+    background:rgba(255,255,255,0.6);
+    width: 100%;
+    height: 10%;
+    position:fixed;
+    top: 0px;
+    transition:background 1.5s ease;
+}
+.font-regular{
+    @font-face {
+        font-family: 'CMGSans';
+        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    }
+}
