@@ -10,6 +10,7 @@ export class BodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa')
   }
 
 }

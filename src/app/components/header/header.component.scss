@@ -1,26 +1,49 @@
-.ancla-header{
-    background:rgba(0, 0, 0, 0.6);
+.main-header{
     width: 100%;
-    height: 10%;
+    height: 80px;
     position:fixed;
     top: 0px;
-    box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
-    transition: background 0.2s ease;
-    transition: background 1s ease-in-out;
-}
 
-.logo{
-    height: 11%;
-    position: fixed;
-    top: 2%;
-    left: 46%;
-    transition: 0.1s ease;
-}
+    &.ancla-header{
+        background:rgba(253, 206, 87, 0.912);
+        box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
+        transition: background 0.7s ease;
+        transition: background 0.7s ease-in-out;
+    }
 
-.logo-fixed{
-    height: 8%;
-    position: fixed;
-    top: 1%;
-    left: 47%;
-    transition: 0.1s ease;
+    & .logo{
+        height: 60px;
+        position: fixed;
+        transition: 0.5s ease;
+
+        &.going-down{
+            height: 50px;
+            transition: 0.5s ease;
+        }
+    }
+    & .menu {
+        font-family: 'Nunito' !important;
+        color: #fff;
+        z-index: 1;
+        li {
+           text-transform: uppercase;
+           display: inline; 
+           line-height: 80px;
+           margin: 0 0 0 50px;
+           cursor: pointer;
+           text-shadow: .18em .18em .18em rgb(49, 49, 49);
+           position: relative;
+           place-items: center;
+
+        //    &:hover::before {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: rgba(65, 65, 65, 0.09);
+        //     border-radius: 100%;
+        //     height: 2em;
+        //     width: 10.5em;
+        //     padding: 0 5px 0 0;
+        //    }
+        }
+    }
 }

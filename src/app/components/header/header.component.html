@@ -1,3 +1,15 @@
-<div [ngClass]="{'ancla-header' : scroll}">
-    <img src="assets/logo.png" [ngClass]="{'logo-fixed': scroll, 'logo': !scroll}">
-</div>
+<nav class="main-header" [ngClass]="{'ancla-header' : scroll}">
+    <div class="row">
+        <div class="col-2">
+            <img src="assets/logo.png" class="logo mt-3 ml-5" [ngClass]="{'going-down': scroll}">
+        </div>
+        <ul class="menu col-10">
+            <li>M&aacute;s acerca de nosotros</li>
+            <li>Siguiente paso</li>
+            <li>Servicios online</li>
+            <li>Recursos</li>
+            <li>Oraci&oacute;n</li>
+            <li>Dar</li>
+        </ul>
+    </div>
+</nav>
