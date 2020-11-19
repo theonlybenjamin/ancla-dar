@@ -1,0 +1,31 @@
+.layout{
+    background-image: url("src/assets/give.jpg");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    & .overlay-container {
+        background-color: #000;
+        opacity: 0.6;
+        background-size: cover;
+        height: 763px;
+    }
+    & .divisor {
+        height: 150px;
+        z-index: -1;
+    }
+    & .welcome-text{
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+}
+.ancla-body{
+    height: 1000px;
+    text-align: center;
+    color: red;
+    @font-face {
+        font-family: 'CMG Sans';
+        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    }
+}

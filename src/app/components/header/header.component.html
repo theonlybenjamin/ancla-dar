@@ -1,15 +1,22 @@
 <nav class="main-header" [ngClass]="{'ancla-header' : scroll}">
     <div class="row">
         <div class="col-2">
-            <img src="assets/logo.png" class="logo mt-3 ml-5" [ngClass]="{'going-down': scroll}">
+            <img src="assets/logo.png" class="logo mt-2 ml-5" [ngClass]="{'going-down': scroll}" routerLink="/">
         </div>
-        <ul class="menu col-10">
+        <ul class="menu col-10" id="menu">
             <li>M&aacute;s acerca de nosotros</li>
             <li>Siguiente paso</li>
             <li>Servicios online</li>
             <li>Recursos</li>
             <li>Oraci&oacute;n</li>
-            <li>Dar</li>
+            <li class="pl-1" routerLink="/dar">Dar</li>
         </ul>
+        <div class="hamburger-icon mt-4">
+            <div class="container" id="hamburger" (click)="changeIconStatus()">
+                <div class="bar bar1"[ngClass]="{'change' : !hamburgerIcon }"></div>
+                <div class="bar bar2"[ngClass]="{'change' : !hamburgerIcon }"></div>
+                <div class="bar bar3"[ngClass]="{'change' : !hamburgerIcon }"></div>
+            </div>
+        </div>
     </div>
 </nav>

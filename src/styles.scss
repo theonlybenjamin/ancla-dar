@@ -9,3 +9,7 @@ body::-webkit-scrollbar {
     background-color: #838383;
     border-radius: 10px;
   }
+
+body:not(.accesibility) li,img{
+  outline: none!important;
+}

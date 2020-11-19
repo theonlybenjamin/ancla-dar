@@ -1,5 +1,18 @@
 .layout{
-    background-image: url('src/assets/jessi.jpeg');
+    background-image: url("src/assets/xmas.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    & .divisor {
+        height: 150px;
+        z-index: -1;
+    }
+    & .welcome-text{
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
 }
 .ancla-body{
     height: 1000px;

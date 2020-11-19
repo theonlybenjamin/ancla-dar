@@ -3,28 +3,28 @@
     height: 80px;
     position:fixed;
     top: 0px;
-
+    z-index: 9999999;
     &.ancla-header{
         background:rgba(253, 206, 87, 0.912);
         box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
-        transition: background 0.7s ease;
-        transition: background 0.7s ease-in-out;
+        transition: background 0.5s ease;
+        transition: background 0.5s ease-in-out;
     }
 
     & .logo{
-        height: 60px;
+        height: 70px;
         position: fixed;
         transition: 0.5s ease;
-
+        cursor: pointer;
         &.going-down{
-            height: 50px;
+            height: 60px;
             transition: 0.5s ease;
         }
     }
     & .menu {
         font-family: 'Nunito' !important;
         color: #fff;
-        z-index: 1;
+        text-align: center;
         li {
            text-transform: uppercase;
            display: inline; 
@@ -45,5 +45,59 @@
         //     padding: 0 5px 0 0;
         //    }
         }
+    }
+    & .hamburger-icon {
+        display: none;
+        position: fixed;
+        right: 40px;
+        & .container {
+            display: inline-block;
+            cursor: pointer;
+          }
+        
+          & .bar {
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+
+            &.bar1.change {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+            &.bar2.change {
+                opacity: 0;
+            }
+            &.bar3.change {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+          }
+    }
+
+    @media (max-width: 1214px){
+        .hamburger-icon {
+            display: block;
+        }
+        .menu {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.4);
+            text-align: center;
+            top: 80px;
+            left: 0px;
+            max-width: unset;
+            overflow: auto;
+            li {
+                margin: 0 0 0 0px;
+                display: block;
+            }
+            &.dont-show {
+                left: -100%;
+            }
+        }
+        
     }
 }
