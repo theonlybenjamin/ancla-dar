@@ -3,18 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { BodyComponent } from './components/body/body.component';
+import { HomeComponent } from './views/home/home.component';
 import { ScrollHeaderDirective } from './directives/scroll-header.directive';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
+import { GiveComponent } from './views/give/give.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
-    ScrollHeaderDirective
+    HomeComponent,
+    ScrollHeaderDirective,
+    GiveComponent,
+    CardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

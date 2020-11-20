@@ -1,0 +1,29 @@
+.layout{
+    background-image: url("src/assets/xmas.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    & .divisor {
+        height: 150px;
+        z-index: -1;
+    }
+    & .welcome-text{
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+}
+.ancla-body{
+    height: 400px;
+    @font-face {
+        font-family: 'CMGSans';
+        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    }
+}
+.font-regular{
+    @font-face {
+        font-family: 'CMGSans';
+        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    }
+}
