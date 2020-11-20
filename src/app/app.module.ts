@@ -8,6 +8,7 @@ import { ScrollHeaderDirective } from './directives/scroll-header.directive';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { GiveComponent } from './views/give/give.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { GiveComponent } from './views/give/give.component';
     HeaderComponent,
     HomeComponent,
     ScrollHeaderDirective,
-    GiveComponent
+    GiveComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

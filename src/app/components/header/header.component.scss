@@ -1,9 +1,10 @@
 .main-header{
     width: 100%;
     height: 80px;
-    position:fixed;
+    position: fixed;
     top: 0px;
     z-index: 9999999;
+
     &.ancla-header{
         background:rgba(253, 206, 87, 0.912);
         box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);

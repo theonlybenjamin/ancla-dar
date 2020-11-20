@@ -1,31 +1,47 @@
 .layout{
-    background-image: url("src/assets/give.jpg");
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-
-    & .overlay-container {
-        background-color: #000;
-        opacity: 0.6;
+    & .image-container {
+        background-image: url("src/assets/give.jpg");
         background-size: cover;
-        height: 763px;
+        background-position: top center;
+        background-repeat: no-repeat;   
+    
+        & .overlay {
+            display: block;
+            background: rgba(0, 0, 0, .6);
+            background-size: cover;
+            height: 700px;
+
+            & .give-text {
+                color: white;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                font-family: 'Oswald';
+                font-size: 40pt;
+            }
+            & .verse {
+                color: white;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 14pt;
+            }
+        }
+
     }
-    & .divisor {
-        height: 150px;
-        z-index: -1;
+    & .verse-container {
+        background-color: rgb(0, 0, 0);
+        height: fit-content;
+        font-family: 'Lato';
+        text-align: center;
+        padding: 20px 0 20px 0;
     }
-    & .welcome-text{
-        width: 30%;
-        display: block;
-        margin: auto;
-    }
-}
-.ancla-body{
-    height: 1000px;
-    text-align: center;
-    color: red;
-    @font-face {
-        font-family: 'CMG Sans';
-        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
+    & .ways-to-give {
+        background-color: #ffffff;
+        text-align: center;
+        // font-family: 'Oswald';
+        height: fit-content;
+        padding: 20px 0 20px 0;
     }
 }
