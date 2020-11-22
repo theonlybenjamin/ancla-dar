@@ -1,3 +1,5 @@
+$backgroud-yellow: rgba(253, 206, 87, 0.912);
+$backgroud-red: rgba(247, 45, 45, 0.912);
 .main-header{
     width: 100%;
     height: 80px;
@@ -6,7 +8,7 @@
     z-index: 9999999;
 
     &.ancla-header{
-        background:rgba(253, 206, 87, 0.912);
+        background: $backgroud-red;
         box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
         transition: background 0.5s ease;
         transition: background 0.5s ease-in-out;
@@ -35,16 +37,6 @@
            text-shadow: .18em .18em .18em rgb(49, 49, 49);
            position: relative;
            place-items: center;
-
-        //    &:hover::before {
-        //     content: "";
-        //     position: absolute;
-        //     background-color: rgba(65, 65, 65, 0.09);
-        //     border-radius: 100%;
-        //     height: 2em;
-        //     width: 10.5em;
-        //     padding: 0 5px 0 0;
-        //    }
         }
     }
     & .hamburger-icon {
@@ -81,22 +73,30 @@
         .hamburger-icon {
             display: block;
         }
+        &.ancla-header-responsive{
+            background: $backgroud-red;
+            box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
+            transition: background 0.2s ease;
+            transition: background 0.2s ease-in-out;
+            height: 70vh;
+        }
         .menu {
             width: 100%;
             height: 100vh;
             position: fixed;
-            background-color: rgba(255, 255, 255, 0.4);
             text-align: center;
             top: 80px;
-            left: 0px;
+            left: -100%;
             max-width: unset;
             overflow: auto;
             li {
-                margin: 0 0 0 0px;
+                margin: -15px 0 0 0px;
                 display: block;
+
             }
-            &.dont-show {
-                left: -100%;
+            &.show{
+                left: 0px;
+                transition: all 0.3s ease-in-out;
             }
         }
         

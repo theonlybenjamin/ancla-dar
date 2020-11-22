@@ -7,7 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public scroll = false;
-  public hamburgerIcon = false;
+  public isHamburgerOpen = false;
 
   constructor() { }
 
@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   public changeIconStatus() {
-    this.hamburgerIcon = !this.hamburgerIcon;
-    document.getElementById('menu').classList.toggle('dont-show');
+    this.isHamburgerOpen = !this.isHamburgerOpen;
+    document.getElementById('menu').classList.toggle('show');
   }
 
   @HostListener('window:scroll',['$event'])

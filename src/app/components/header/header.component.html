@@ -1,4 +1,4 @@
-<nav class="main-header" [ngClass]="{'ancla-header' : scroll}">
+<nav class="main-header" [ngClass]="{'ancla-header' : scroll, 'ancla-header-responsive': isHamburgerOpen }">
     <div class="row">
         <div class="col-2">
             <img src="assets/logo.png" class="logo mt-2 ml-5" [ngClass]="{'going-down': scroll}" routerLink="/">
@@ -13,9 +13,9 @@
         </ul>
         <div class="hamburger-icon mt-4">
             <div class="container" id="hamburger" (click)="changeIconStatus()">
-                <div class="bar bar1"[ngClass]="{'change' : !hamburgerIcon }"></div>
-                <div class="bar bar2"[ngClass]="{'change' : !hamburgerIcon }"></div>
-                <div class="bar bar3"[ngClass]="{'change' : !hamburgerIcon }"></div>
+                <div class="bar bar1"[ngClass]="{'change' : isHamburgerOpen }"></div>
+                <div class="bar bar2"[ngClass]="{'change' : isHamburgerOpen }"></div>
+                <div class="bar bar3"[ngClass]="{'change' : isHamburgerOpen }"></div>
             </div>
         </div>
     </div>
