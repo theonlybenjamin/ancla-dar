@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { GiveComponent } from './views/give/give.component';
 import { CardComponent } from './components/card/card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardComponent } from './components/card/card.component';
     HomeComponent,
     ScrollHeaderDirective,
     GiveComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
