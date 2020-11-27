@@ -3,19 +3,21 @@ $bacground-color:rgb(12, 12, 12);
 .footer-layout {
     width: 100%;
     min-height: 345px;
-    height: fit-content;
-    background-color: $bacground-color;
+    height: fit-content; 
+    // background-color: $bacground-color;
+    background-color: rgb(17, 17, 17);
+
     color:white;
 
     & .title {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 17px;
         padding-bottom: 5px;
     }
 
     & .content {
         font-weight: normal;
-        font-size: 13px;
+        font-size: 16px;
 
         & .link {
             color: white;
@@ -29,6 +31,15 @@ $bacground-color:rgb(12, 12, 12);
 
     & img {
         height: 25px;
-        margin: 10px 20px 10px 3px;
+        margin: 10px 53px 10px 50px;
+    }
+    & .social-media-row{
+        // background-color: rgb(28, 27, 27);
+        background-color: $bacground-color;
+
+        padding-top: 9px;
+        & .row {
+            margin-right: unset !important;
+        }
     }
 }

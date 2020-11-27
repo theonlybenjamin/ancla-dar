@@ -1,17 +1,18 @@
 .layout{
-    background-image: url("src/assets/xmas.png");
+    background-image: url("src/assets/home-christmas.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
 
     & .divisor {
-        height: 150px;
+        height: 240px;
         z-index: -1;
     }
     & .welcome-text{
         width: 30%;
         display: block;
         margin: auto;
+        opacity: 0.9;
     }
 }
 .ancla-body{
