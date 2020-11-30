@@ -77,14 +77,14 @@ $bacground-color:rgba(253, 206, 87, 0.912);
             box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
             transition: background 0.2s ease;
             transition: background 0.2s ease-in-out;
-            height: 70vh;
+            height: 76vh;
         }
         .menu {
             width: 100%;
             height: 100vh;
             position: fixed;
             text-align: center;
-            top: 80px;
+            top: 60px;
             left: -100%;
             max-width: unset;
             overflow: auto;

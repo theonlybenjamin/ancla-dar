@@ -36,8 +36,9 @@ $bacground-color:rgb(12, 12, 12);
     & .social-media-row{
         // background-color: rgb(28, 27, 27);
         background-color: $bacground-color;
-
         padding-top: 9px;
+        margin-top: 10px;
+
         & .row {
             margin-right: unset !important;
         }

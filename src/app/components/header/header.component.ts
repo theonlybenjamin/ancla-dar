@@ -1,17 +1,38 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   public scroll = false;
   public isHamburgerOpen = false;
-
-  constructor() { }
+  private subcriptiosn = new Subscription();
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+    this.subcriptiosn.add(this.router.events.subscribe((event) => {
+       if (event instanceof NavigationStart){
+        this.closeMenu();
+       }
+     }));
+  }
+
+  ngOnDestroy(){
+    this.subcriptiosn.unsubscribe();
+  }
+
+  private closeMenu() {
+    const menuElement = document.getElementById('menu').classList;
+    if (menuElement.contains('show')){
+      this.isHamburgerOpen = false;
+      menuElement.toggle('show');
+    }
   }
 
   public changeIconStatus() {
@@ -27,4 +48,5 @@ export class HeaderComponent implements OnInit {
       this.scroll = false
     };
   }
+
 }

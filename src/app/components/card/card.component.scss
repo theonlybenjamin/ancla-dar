@@ -29,3 +29,29 @@
 .nav-pills-custom .nav-link.active::before {
     opacity: 1;
 }
+.paypal-button{
+    color: white;
+    background-color: #0070ba;
+    border-radius: 1.5rem;
+    border: .0625rem solid #0070ba;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    min-width: 6rem;
+    padding: .6875rem 1.4375rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color .24s ease,background-color .24s ease,border-color .24s ease,-webkit-box-shadow .24s ease;
+    transition: color .24s ease,background-color .24s ease,border-color .24s ease,-webkit-box-shadow .24s ease;
+    -o-transition: color .24s ease,background-color .24s ease,border-color .24s ease,box-shadow .24s ease;
+    transition: color .24s ease,background-color .24s ease,border-color .24s ease,box-shadow .24s ease;
+    transition: color .24s ease,background-color .24s ease,border-color .24s ease,box-shadow .24s ease,-webkit-box-shadow .24s ease;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        background-color: #003087;
+        border-color: #003087;
+
+    }
+}
