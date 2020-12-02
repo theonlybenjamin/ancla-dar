@@ -16,7 +16,6 @@
                 text-align: center;
                 position: relative;
                 top: 50%;
-                font-family: 'Oswald';
                 font-size: 40pt;
             }
             & .verse {
@@ -24,7 +23,6 @@
                 text-align: center;
                 position: relative;
                 top: 50%;
-                font-family: 'Source Sans Pro', sans-serif;
                 font-size: 14pt;
             }
         }
@@ -33,15 +31,17 @@
     & .verse-container {
         background-color: rgb(0, 0, 0);
         height: fit-content;
-        font-family: 'Lato';
         text-align: center;
         padding: 20px 0 20px 0;
     }
     & .ways-to-give {
         background-color: #ffffff;
         text-align: center;
-        // font-family: 'Oswald';
         height: fit-content;
-        padding: 20px 0 20px 0;
+        padding: 30px 0 20px 0;
+
+        .mail-to{
+            font-size: 18px;
+        }
     }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
-import { NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -19,6 +19,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.subcriptiosn.add(this.router.events.subscribe((event) => {
        if (event instanceof NavigationStart){
         this.closeMenu();
+       }
+
+       if (event instanceof NavigationEnd){
+        window.scrollTo(0, 0)
        }
      }));
   }
