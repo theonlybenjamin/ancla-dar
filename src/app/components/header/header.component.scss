@@ -91,8 +91,11 @@ $bacground-color:rgba(253, 206, 87, 0.912);
             li {
                 margin: -15px 0 0 0px;
                 display: block;
-
+                :first-child{
+                    margin-top: 30px;
+                }
             }
+            
             &.show{
                 left: 0px;
                 transition: all 0.3s ease-in-out;
