@@ -6,5 +6,4 @@ function TabPress(evt) {
   if(evt.keyCode == tabKey) {
     document.body.className += ' ' + 'accesibility';
   }
-  console.log('asdasdasd')
 }

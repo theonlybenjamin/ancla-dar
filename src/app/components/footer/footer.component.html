@@ -1,41 +1,74 @@
 <footer class="footer-layout pt-4">
   <div class="container">
     <div class="row d-flex align-items-center text-md-left text-center">
-      <div class="col-sm-12 col-md-5 col-lg-4">
+      <section class="col-sm-12 col-md-5 col-lg-4">
         <span class="title">Ubicaci&oacute;n</span>
-          <p class="content pb-2">Calle Loa #36 - Anc&oacute;n 15123</p>
+        <span class="content">
+          <ul class="content list-unstyled">
+            <li>
+              <p class="content pt-1">Calle Loa #36 - Anc&oacute;n 15123</p>
+            </li>
+            <li>
+              <p class="content">
+                <a class="link pointer link" href="{{googleMapsUrl}}" target="_blank" type="button">Ir por Google maps</a>
+              </p>
+            </li>
+            <li>
+              <p class="content">
+                <a class="link pointer link" href="{{wazeUrl}}" target="_blank" type="button">Ir por Waze</a>
+              </p>
+            </li>
+          </ul>
+        </span>
         <span class="title">Cont&aacute;ctanos</span>
-          <p class="content pb-2">
-            <a href="mailto:comunidadcristianaancla@gmail" class="link"> comunidadcristianaancla@gmail.com</a></p>
+          <p class="content">
+            <a href="mailto:comunidadcristianaancla@gmail" class="link"> comunidadcristianaancla@gmail.com</a>
+          </p>
         <span class="title">M&aacute;s acerca de Ancla</span>
         <span class="content">
-          <p (click)="$event" class="link pointer content pt-1">Liderazgo</p>
-          <p (click)="$event" class="link pointer content">¿En que creemos?</p>
-          <p (click)="$event" class="link pointer content">Nuestra cultura</p>
+          <ul class="content list-unstyled">
+            <li><p (click)="$event" class="link pointer content pt-1">Liderazgo</p></li>
+            <li><p (click)="$event" class="link pointer content">¿En que creemos?</p></li>
+            <li><p (click)="$event" class="link pointer content">Nuestra cultura</p></li>
+          </ul>
         </span>
-     </div>
+     </section>
 
-      <div class="col-sm-12 col-md-3 col-lg-3 pb-4 mb-2">
+      <section class="col-sm-12 col-md-3 col-lg-3">
         <span class="title">Siguiente paso</span>
-        <ul class="content pb-2 list-unstyled">
-          <li (click)="$event" class="link pointer content pb-2 pt-1">Crecer</li>
-          <li (click)="$event" class="link pointer content pb-2">Comunidades de hogar</li>
-          <li (click)="$event" class="link pointer content pb-2">Estudios Avanzados</li>
+        <ul class="content list-unstyled">
+          <li (click)="$event" class="link pointer content pt-1"><p>Crecer</p></li>
+          <li (click)="$event" class="link pointer content"><p>Comunidades de hogar</p></li>
+          <li (click)="$event" class="link pointer content"><p>Estudios Avanzados</p></li>
         </ul>
         <span class="title">Links &uacute;tiles</span>
-        <ul class="content pb-2 list-unstyled">
-          <li class="link pb-2"> <a href="https://perukidz.org/" class="link" target="_blank">Perukidz</a></li>
-          <li class="link pb-2"> <a href="http://regencyministries.org/" class="link" target="_blank">Regency Ministries</a></li>
+        <ul class="content list-unstyled">
+          <li> 
+            <p>
+              <a href="https://perukidz.org/" class="link" target="_blank">Perukidz</a>
+            </p>
+          </li>
         </ul>
-      </div>
-
-      <div class="col-sm-12 col-md-4 col-lg-5">
+        <span class="title">Ministerios</span>
+        <ul class="content list-unstyled">
+          <li>
+            <p class="link pointer">Jóvenes Ancla</p>
+          </li>
+          <li>
+            <p class="link pointer">Adolescentes Ancla</p>
+          </li>
+          <li>
+            <p class="link pointer">AnclaKids</p>
+          </li>
+        </ul>
+      </section>
+      <section class="col-sm-12 col-md-4 col-lg-5">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.718852220118!2d-77.1738813493993!3d-11.77494704006888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91067ff4ce9dd779%3A0xe604511ca5b457a2!2sComunidad%20Cristiana%20Ancla!5e0!3m2!1ses!2smx!4v1606324295942!5m2!1ses!2smx"
         width="100%" height="300vh" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
+      </section>
     </div>
   </div>
-    <div class="social-media-row">
+    <section class="social-media-row">
       <div class="row d-flex align-items-center text-center">
         <div class="col-md-12 col-lg-12 col-sm-12">
           <p>
@@ -50,6 +83,6 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
   </footer>

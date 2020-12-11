@@ -10,11 +10,6 @@ export class ScrollHeaderDirective {
   @HostListener('window:scroll',['$event'])
   scrollTopTransparent(){
     this.scroll = window.pageYOffset;
-    if(window.pageYOffset>20){
-      
-    }else{
-      console.log('nope')
-    };
   }
 
 }
