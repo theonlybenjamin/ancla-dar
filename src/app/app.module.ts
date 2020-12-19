@@ -10,6 +10,9 @@ import { routes } from './app.routes';
 import { GiveComponent } from './views/give/give.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgbActiveModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NotAvalibleComponent } from './components/not-avalible/not-avalible.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,18 @@ import { FooterComponent } from './components/footer/footer.component';
     ScrollHeaderDirective,
     GiveComponent,
     CardComponent,
-    FooterComponent
+    FooterComponent,
+    NotAvalibleComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModalModule
   ],
-  providers: [],
+  providers: [
+    NgbActiveModal
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

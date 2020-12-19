@@ -2,46 +2,46 @@
   <div class="container">
     <div class="row d-flex align-items-center text-md-left text-center">
       <section class="col-sm-12 col-md-5 col-lg-4">
-        <span class="title">Ubicaci&oacute;n</span>
+        <h5 class="title margin">Ubicaci&oacute;n</h5>
         <span class="content">
-          <ul class="content list-unstyled">
+          <ul class="list-unstyled">
             <li>
-              <p class="content pt-1">Calle Loa #36 - Anc&oacute;n 15123</p>
+              <p class="pt-1">Calle Loa #36 - Anc&oacute;n 15123</p>
             </li>
             <li>
-              <p class="content">
+              <p>
                 <a class="link pointer link" href="{{googleMapsUrl}}" target="_blank" type="button">Ir por Google maps</a>
               </p>
             </li>
             <li>
-              <p class="content">
+              <p>
                 <a class="link pointer link" href="{{wazeUrl}}" target="_blank" type="button">Ir por Waze</a>
               </p>
             </li>
           </ul>
         </span>
-        <span class="title">Cont&aacute;ctanos</span>
+        <h5 class="title margin">Cont&aacute;ctanos</h5>
           <p class="content">
             <a href="mailto:comunidadcristianaancla@gmail" class="link"> comunidadcristianaancla@gmail.com</a>
           </p>
-        <span class="title">M&aacute;s acerca de Ancla</span>
+        <h5 class="title margin">M&aacute;s acerca de Ancla</h5>
         <span class="content">
-          <ul class="content list-unstyled">
-            <li><p (click)="$event" class="link pointer content pt-1">Liderazgo</p></li>
-            <li><p (click)="$event" class="link pointer content">¿En que creemos?</p></li>
-            <li><p (click)="$event" class="link pointer content">Nuestra cultura</p></li>
+          <ul class="list-unstyled">
+            <li><p (click)="notAvalibleModal()" class="link pointer">Liderazgo</p></li>
+            <li><p (click)="notAvalibleModal()" class="link pointer">¿En que creemos?</p></li>
+            <li><p (click)="notAvalibleModal()" class="link pointer">Nuestra cultura</p></li>
           </ul>
         </span>
      </section>
 
       <section class="col-sm-12 col-md-3 col-lg-3">
-        <span class="title">Siguiente paso</span>
+        <h5 class="title margin">Siguiente paso</h5>
         <ul class="content list-unstyled">
-          <li (click)="$event" class="link pointer content pt-1"><p>Crecer</p></li>
-          <li (click)="$event" class="link pointer content"><p>Comunidades de hogar</p></li>
-          <li (click)="$event" class="link pointer content"><p>Estudios Avanzados</p></li>
+          <li (click)="notAvalibleModal()" class="link pointer pt-1"><p>Crecer</p></li>
+          <li (click)="notAvalibleModal()" class="link pointer" style="margin-right: -17px;"><p>Comunidades de hogar</p></li>
+          <li (click)="notAvalibleModal()" class="link pointer"><p>Estudios Avanzados</p></li>
         </ul>
-        <span class="title">Links &uacute;tiles</span>
+        <h5 class="title margin">Links &uacute;tiles</h5>
         <ul class="content list-unstyled">
           <li> 
             <p>
@@ -49,16 +49,16 @@
             </p>
           </li>
         </ul>
-        <span class="title">Ministerios</span>
+        <h5 class="title margin">Ministerios</h5>
         <ul class="content list-unstyled">
           <li>
-            <p class="link pointer">Jóvenes Ancla</p>
+            <p class="link pointer" (click)="notAvalibleModal()">Jóvenes Ancla</p>
           </li>
           <li>
-            <p class="link pointer">Adolescentes Ancla</p>
+            <p class="link pointer" (click)="notAvalibleModal()">Adolescentes Ancla</p>
           </li>
           <li>
-            <p class="link pointer">AnclaKids</p>
+            <p class="link pointer" (click)="notAvalibleModal()">AnclaKids</p>
           </li>
         </ul>
       </section>

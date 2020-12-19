@@ -4,21 +4,23 @@ $bacground-color:rgb(12, 12, 12);
     width: 100%;
     min-height: 345px;
     height: fit-content; 
-    // background-color: $bacground-color;
     background-color: rgb(17, 17, 17);
-
     color:white;
 
     & .title {
         font-weight: bold;
         font-size: 17px;
         padding-bottom: 5px;
+        
+        &.margin{ 
+            margin-top: 2rem;
+        }
     }
 
     & .content {
-        font-weight: normal;
+        font-weight: 200;
         font-size: 16px;
-
+        line-height: 13px;
         & .link {
             color: white;
             text-decoration: none;
@@ -34,7 +36,6 @@ $bacground-color:rgb(12, 12, 12);
         margin: 10px 53px 10px 50px;
     }
     & .social-media-row{
-        // background-color: rgb(28, 27, 27);
         background-color: $bacground-color;
         padding-top: 9px;
         margin-top: 15px;

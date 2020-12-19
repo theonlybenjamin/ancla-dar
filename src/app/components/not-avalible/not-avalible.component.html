@@ -1,0 +1,29 @@
+<div *ngIf="!isOnGive">
+  <div class="modal-header">
+    <h4 class="modal-title">A&uacute;n no disponible</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Por el momento solo se encuentra disponible nuestra pantalla de Dar, haz click en el bot&oacute; de abajo para ir.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-info" (click)="goToDar()">Ir a Dar</button>
+  </div>
+</div>
+
+<div *ngIf="isOnGive">
+<div class="modal-header">
+  <h4 class="modal-title">A&uacute;n no disponible</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p>Por el momento solo se encuentra disponible la pantalla acutal. </p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-info" (click)="activeModal.dismiss('Cross click')">Cerrar</button>
+</div>
+</div>

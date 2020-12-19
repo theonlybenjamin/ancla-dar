@@ -4,11 +4,11 @@
             <img src="assets/logo.png" class="logo mt-2 ml-5" [ngClass]="{'going-down': scroll}" routerLink="/">
         </div>
         <ul class="menu col-10" id="menu">
-            <li>M&aacute;s acerca de nosotros</li>
-            <li>Siguiente paso</li>
-            <li>Servicios online</li>
-            <li>Recursos</li>
-            <li>Oraci&oacute;n</li>
+            <li (click)="notAvalibleModal()">M&aacute;s acerca de nosotros</li>
+            <li (click)="notAvalibleModal()">Siguiente paso</li>
+            <li (click)="notAvalibleModal()">Servicios online</li>
+            <li (click)="notAvalibleModal()">Recursos</li>
+            <li (click)="notAvalibleModal()">Oraci&oacute;n</li>
             <li class="pl-1" routerLink="/dar">Dar</li>
         </ul>
         <div class="hamburger-icon mt-4">

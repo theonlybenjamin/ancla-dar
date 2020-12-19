@@ -1,5 +1,5 @@
 .layout{
-    background-image: url("src/assets/home-christmas.png");
+    background-image: url(".././../../assets/home-christmas.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -17,14 +17,4 @@
 }
 .ancla-body{
     height: 400px;
-    @font-face {
-        font-family: 'CMGSans';
-        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
-    }
-}
-.font-regular{
-    @font-face {
-        font-family: 'CMGSans';
-        src: url('src/assets/fonts/CMGSans-Regular.ttf') format('truetype');
-    }
 }
