@@ -1,4 +1,5 @@
 $bacground-color:rgba(253, 206, 87, 0.912);
+$bacground-color-no-box:rgba(253, 206, 87);
 .main-header{
     width: 100%;
     height: 80px;
@@ -73,32 +74,42 @@ $bacground-color:rgba(253, 206, 87, 0.912);
             display: block;
         }
         &.ancla-header-responsive{
-            background: $bacground-color;
+            background: $bacground-color-no-box;
             box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
             transition: background 0.2s ease;
             transition: background 0.2s ease-in-out;
-            height: 76vh;
+            height: 100%;
+            .row{
+                flex-direction: column;
+            }
         }
         .menu {
+            margin-top: 95px;
             width: 100%;
-            height: 100vh;
-            position: fixed;
-            text-align: center;
-            top: 60px;
-            left: -100%;
+            height: fit-content;
+            text-align: left;
+            display: none;
             max-width: unset;
             overflow: auto;
+            transition: all 1s ease-in-out;
             li {
-                margin: -15px 0 0 0px;
-                display: block;
+                margin: auto;
+                display: inherit;
+                font-size: 24px;
                 :first-child{
                     margin-top: 30px;
+                }
+                &::after{
+                    width: 100px;
+                    height: 50px;
+                    background-color:#fff;
+
                 }
             }
             
             &.show{
-                left: 0px;
-                transition: all 0.3s ease-in-out;
+                display: inherit;
+                transition: all 1s ease-in-out;
             }
         }
         

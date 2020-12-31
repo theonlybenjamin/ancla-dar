@@ -43,10 +43,14 @@ $bacground-color:rgb(12, 12, 12);
         & .row {
             margin-right: unset !important;
             margin-left: unset !important;
+            justify-content: space-evenly !important;
         }
         & .nopad{
             padding-right: 0px;
             padding-left: 0px;
+        }
+        & .box {
+            justify-content: space-evenly;
         }
     }
 }
