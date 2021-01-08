@@ -12,7 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgbActiveModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { NotAvalibleComponent } from './components/not-avalible/not-avalible.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,10 @@ import { CommonModule } from '@angular/common';
     NgbModalModule
   ],
   providers: [
-    NgbActiveModal
+    NgbActiveModal,
+    {
+      provide: LocationStrategy, useClass: PathLocationStrategy
+    }
   ],
   bootstrap: [AppComponent]
 })
