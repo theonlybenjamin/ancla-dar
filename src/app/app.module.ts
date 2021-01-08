@@ -28,7 +28,7 @@ import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/c
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { anchorScrolling: 'enabled' }),
     NgbModalModule
   ],
   providers: [
