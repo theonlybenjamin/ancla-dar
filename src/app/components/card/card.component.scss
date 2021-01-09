@@ -63,6 +63,9 @@
     -moz-appearance: none;
     appearance: none;
     img {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         margin-right: 10px;
     }
 }
