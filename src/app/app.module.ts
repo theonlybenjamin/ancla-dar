@@ -28,7 +28,11 @@ import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/c
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes, { anchorScrolling: 'enabled' }),
+    RouterModule.forRoot(routes, {
+                                  anchorScrolling: 'enabled', 
+                                  scrollPositionRestoration: 'enabled',
+                                  scrollOffset: [0, 130]
+                                }),
     NgbModalModule
   ],
   providers: [
