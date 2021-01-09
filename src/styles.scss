@@ -2,6 +2,12 @@
 // $backgroud-red: rgba(247, 45, 45, 0.912);
 // $backgroud-white: rgba(255, 255, 255, 0.912);
 
+a{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
   }
