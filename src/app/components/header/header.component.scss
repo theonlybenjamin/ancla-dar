@@ -1,5 +1,6 @@
-$bacground-color:rgba(253, 206, 87, 0.912);
+$bacground-color:rgba(1, 6, 7, 0.99);
 $bacground-color-no-box:rgba(253, 206, 87);
+
 .main-header{
     width: 100%;
     height: 80px;
@@ -10,8 +11,8 @@ $bacground-color-no-box:rgba(253, 206, 87);
     &.ancla-header{
         background: $bacground-color;
         box-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
-        transition: background 0.5s ease;
-        transition: background 0.5s ease-in-out;
+        transition: background 0.3s ease;
+        transition: background 0.3s ease-in-out;
     }
 
     & .logo{
