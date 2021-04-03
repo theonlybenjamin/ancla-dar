@@ -1,6 +1,4 @@
-// $backgroud-yellow: rgba(253, 206, 87, 0.912);
-// $backgroud-red: rgba(247, 45, 45, 0.912);
-// $backgroud-white: rgba(255, 255, 255, 0.912);
+
 a{
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -37,7 +35,7 @@ body:not(.accesibility) li,img{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #000 !important;
+  background-color: #003037 !important;
   z-index: 9999999;
 
   /* animation: loader 2s infinite ease; */
@@ -99,9 +97,10 @@ body:not(.accesibility) li,img{
       filter: blur(1px);
       animation: shadow 0.5s alternate infinite ease;
 
-      &:nth-child(4) {
-        left: 45%;
-        animation-delay: 0.2s;
+      &:nth-child(6) {
+        left: auto;
+        right: 45%;
+        animation-delay: 0.26s;
       }
 
       &:nth-child(5) {
