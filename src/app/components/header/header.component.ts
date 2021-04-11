@@ -11,6 +11,7 @@ import { NotAvalibleComponent } from '../not-avalible/not-avalible.component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
+
   public scroll = false;
   public isHamburgerOpen = false;
   private subcriptiosn = new Subscription();
@@ -43,16 +44,18 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   private closeMenu() {
-    const menuElement = document.getElementById('menu').classList;
-    if (menuElement.contains('show')){
-      this.isHamburgerOpen = false;
-      menuElement.toggle('show');
+    if (document.getElementById('menu')){
+      const menuElement = document.getElementById('menu').classList;
+      if (menuElement.contains('show')){
+        this.isHamburgerOpen = false;
+        menuElement.toggle('show');
+      }
     }
   }
 
   public changeIconStatus() {
     this.isHamburgerOpen = !this.isHamburgerOpen;
-    document.getElementById('menu').classList.toggle('show');
+    if (document.querySelector('.header__menu')) document.querySelector('.header__menu').classList.toggle('show');
   }
 
   public notAvalibleModal(){
@@ -61,7 +64,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   @HostListener('window:scroll',['$event'])
   scrollTopTransparent(){
-    if(window.pageYOffset> 15){
+    if (window.pageYOffset> 15) {
       this.scroll = true;
     }else{
       this.scroll = false

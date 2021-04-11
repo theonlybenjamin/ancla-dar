@@ -1,24 +1,22 @@
-<header class="main-header" [ngClass]="{'ancla-header' : scroll, 'ancla-header-responsive': isHamburgerOpen }">
-    <div class="row">
-        <div class="col-2">
-            <img src="assets/logo.png" class="logo mt-2 ml-5" [ngClass]="{'going-down': scroll}" routerLink="/">
-        </div>
-        <nav class="menu col-10" id="menu">
-            <ul>
-                <li (click)="notAvalibleModal()">M&aacute;s acerca de nosotros</li>
-                <li (click)="notAvalibleModal()">Siguiente paso</li>
-                <li (click)="notAvalibleModal()">Servicios online</li>
-                <li (click)="notAvalibleModal()">Recursos</li>
-                <li (click)="notAvalibleModal()">Oraci&oacute;n</li>
-                <li class="pl-1" routerLink="/dar">Dar</li>
-            </ul>
-        </nav>
-        <div class="hamburger-icon mt-4">
-            <div class="container" id="hamburger" (click)="changeIconStatus()">
-                <div class="bar bar1"[ngClass]="{'change' : isHamburgerOpen }"></div>
-                <div class="bar bar2"[ngClass]="{'change' : isHamburgerOpen }"></div>
-                <div class="bar bar3"[ngClass]="{'change' : isHamburgerOpen }"></div>
-            </div>
-        </div>
+<header class="header px-4" [ngClass]="{'menu--scroll' : scroll || isHamburgerOpen, 'show--menu': isHamburgerOpen }">
+	<figure>
+		<img src="assets/logo.png" class="logo" routerLink="/">
+	</figure>
+  <nav class="header__menu">
+    <ul class="text-center nunito text-uppercase">
+      <li (click)="notAvalibleModal()">M&aacute;s acerca de nosotros</li>
+      <li (click)="notAvalibleModal()">Siguiente paso</li>
+      <li (click)="notAvalibleModal()">Servicios online</li>
+      <li (click)="notAvalibleModal()">Recursos</li>
+      <li (click)="notAvalibleModal()">Oraci&oacute;n</li>
+      <li routerLink="/dar" (click)="changeIconStatus()">Dar</li>
+    </ul>
+  </nav>
+  <div class="header__hamburger">
+    <div class="header__hamburger-container" id="hamburger" (click)="changeIconStatus()">
+      <div class="header__hamburger-bar header__hamburger-bar1"[ngClass]="{'change' : isHamburgerOpen }"></div>
+      <div class="header__hamburger-bar header__hamburger-bar2"[ngClass]="{'change' : isHamburgerOpen }"></div>
+      <div class="header__hamburger-bar header__hamburger-bar3"[ngClass]="{'change' : isHamburgerOpen }"></div>
     </div>
+  </div>
 </header>

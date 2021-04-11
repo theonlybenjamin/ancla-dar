@@ -1,4 +1,5 @@
 $bacground-color:rgb(12, 12, 12);
+@import '../../sass/paleta.scss';
 
 .footer-layout {
     width: 100%;
@@ -9,7 +10,7 @@ $bacground-color:rgb(12, 12, 12);
 
     & .title {
         font-weight: bold;
-        font-size: 17px;
+        font-size: 15px;
         padding-bottom: 5px;
         
         &.margin{ 
@@ -19,14 +20,14 @@ $bacground-color:rgb(12, 12, 12);
 
     & .content {
         font-weight: 200;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 13px;
         & .link {
             color: white;
             text-decoration: none;
 
             &:hover {
-                color: rgba(253, 206, 87);
+                color: $primary-color;
             }
         }
     }
@@ -37,9 +38,7 @@ $bacground-color:rgb(12, 12, 12);
     }
     & .social-media-row{
         background-color: $bacground-color;
-        padding-top: 9px;
         margin-top: 15px;
-        padding-bottom: 9px;
         & .row {
             margin-right: unset !important;
             margin-left: unset !important;

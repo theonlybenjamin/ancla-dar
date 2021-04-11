@@ -29,7 +29,9 @@ body:not(.accesibility) li,img{
 .pointer {
   cursor: pointer;
 }
-
+figure {
+  margin: 0px !important;
+}
 .loader-wrapper {
   position: fixed;
   width: 100%;
@@ -157,6 +159,9 @@ body:not(.accesibility) li,img{
 }
 .poppins{
   font-family: 'Poppins';
+}
+.nunito {
+  font-family: 'Nunito';
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
