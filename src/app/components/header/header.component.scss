@@ -11,10 +11,6 @@
   justify-content: space-between;
 	transition: background 0.3s ease;
 	transition: background 0.3s ease-in-out;
-  & .header__responsive--menu{
-    display: block;
-    opacity: 0;
-  }
   & .logo {
     height: 70px;
     transition: height 0.4s ease-in-out;
@@ -98,18 +94,18 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 300px;
+        height: 340px;
         width: 100%;
         left: 0;
         top: 80px;
         background-color: black;
         opacity: 1;
-        transition: opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         border-radius: 0px 0px 20px 20px;
         position: absolute;
         padding: 0px;
         li {
-          margin: 10px 0px 10px;
+          margin: 14px 0px 14px;
         }
       }
       &.show {
