@@ -6,7 +6,9 @@
         <span class="content">
           <ul class="list-unstyled">
             <li>
-              <p class="pt-1">Calle Loa #36 - Anc&oacute;n 15123</p>
+              <p>
+                <a class="link pointer link" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;" href="{{wazeUrl}}" target="_blank" type="button" role="button">Ir por Waze</a>
+              </p>
             </li>
             <li>
               <p>
@@ -14,9 +16,7 @@
               </p>
             </li>
             <li>
-              <p>
-                <a class="link pointer link" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;" href="{{wazeUrl}}" target="_blank" type="button" role="button">Ir por Waze</a>
-              </p>
+              <p class="pt-1">Calle Loa #36 - Anc&oacute;n 15123</p>
             </li>
           </ul>
         </span>
@@ -28,18 +28,18 @@
         <span class="content">
           <ul class="list-unstyled">
             <li><p (click)="notAvalibleModal()" class="link pointer">Liderazgo</p></li>
-            <li><p (click)="notAvalibleModal()" class="link pointer">¿En que creemos?</p></li>
             <li><p (click)="notAvalibleModal()" class="link pointer">Nuestra cultura</p></li>
+            <li><p (click)="notAvalibleModal()" class="link pointer">¿En que creemos?</p></li>
           </ul>
         </span>
      </section>
 
       <section class="col-sm-12 col-md-3 col-lg-3">
-        <h5 class="title margin" style="margin-top: 2rem;">Siguiente paso</h5>
+        <h5 class="title margin next-step">Siguiente paso</h5>
         <ul class="content list-unstyled">
           <li (click)="notAvalibleModal()" class="link pointer pt-1"><p>Crecer</p></li>
-          <li (click)="notAvalibleModal()" class="link pointer" style="margin-right: -17px;"><p>Comunidades de hogar</p></li>
-          <li (click)="notAvalibleModal()" class="link pointer"><p>Estudios Avanzados</p></li>
+          <li (click)="notAvalibleModal()" class="link pointer"><p>Estudios avanzados</p></li>
+          <li (click)="notAvalibleModal()" class="link pointer home-comunity"><p>Comunidades de hogar</p></li>
         </ul>
         <h5 class="title margin">Links &uacute;tiles</h5>
         <ul class="content list-unstyled">
@@ -52,13 +52,13 @@
         <h5 class="title margin">Ministerios</h5>
         <ul class="content list-unstyled">
           <li>
+            <p class="link pointer" (click)="notAvalibleModal()">AnclaKids</p>
+          </li>
+          <li>
             <p class="link pointer" (click)="notAvalibleModal()">Jóvenes Ancla</p>
           </li>
           <li>
             <p class="link pointer" (click)="notAvalibleModal()">Adolescentes Ancla</p>
-          </li>
-          <li>
-            <p class="link pointer" (click)="notAvalibleModal()">AnclaKids</p>
           </li>
         </ul>
       </section>

@@ -5,7 +5,7 @@ $bacground-color:rgb(12, 12, 12);
     width: 100%;
     min-height: 345px;
     height: fit-content; 
-    background-color: rgb(17, 17, 17);
+    background-color: $black;
     color:white;
 
     & .title {
@@ -51,5 +51,16 @@ $bacground-color:rgb(12, 12, 12);
         & .box {
             justify-content: space-evenly;
         }
+    }
+    .home-comunity {
+        margin-right: -17px;
+    }
+}
+@media (max-width: 1024px){
+    .next-step {
+        margin-top: 12px !important;
+    }
+    .home-comunity {
+        margin-right: 0px !important;
     }
 }
