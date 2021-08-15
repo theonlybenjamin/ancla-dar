@@ -2,8 +2,7 @@
   <div class="container py-4">
 
       <div class="row">
-          <div class="col-md-3">
-              <!-- Tabs nav -->
+          <div class="col-md-3" *ngIf="routesService.isOnMobileDevice">
               <div class="nav flex-column nav-pills nav-pills-custom">
                   <a class="nav-link mb-3 p-3 shadow active pointer" href="dar#transfer" [ngClass]="{'active': actualOption === 1}" (click)="optionSelected(1)">
                       <span class="font-weight-bold small text-uppercase">Transferencias a un mismo banco</span></a>
@@ -14,12 +13,25 @@
                   <a class="nav-link mb-3 p-3 shadow pointer" href="dar#paypal" [ngClass]="{'active': actualOption === 3}" (click)="optionSelected(3)">
                       <span class="font-weight-bold small text-uppercase">Paypal</span></a>
 
-                  <a class="nav-link mb-3 p-3 shadow pointer"href="dar#person" [ngClass]="{'active': actualOption === 4}" (click)="optionSelected(4)">
+                  <a class="nav-link mb-3 p-3 shadow pointer" href="dar#person" [ngClass]="{'active': actualOption === 4}" (click)="optionSelected(4)">
                       <span class="font-weight-bold small text-uppercase">En persona</span></a>
               </div>
           </div>
+          <div class="col-md-3" *ngIf="!routesService.isOnMobileDevice">
+              <div class="nav flex-column nav-pills nav-pills-custom">
+                  <a class="nav-link mb-3 p-3 shadow active pointer" [ngClass]="{'active': actualOption === 1}" (click)="optionSelected(1)">
+                      <span class="font-weight-bold small text-uppercase">Transferencias a un mismo banco</span></a>
 
+                  <a class="nav-link mb-3 p-3 shadow pointer" [ngClass]="{'active': actualOption === 2}" (click)="optionSelected(2)">
+                      <span class="font-weight-bold small text-uppercase">Transferencias &nbsp;Interbancarias</span></a>
 
+                  <a class="nav-link mb-3 p-3 shadow pointer" [ngClass]="{'active': actualOption === 3}" (click)="optionSelected(3)">
+                      <span class="font-weight-bold small text-uppercase">Paypal</span></a>
+
+                  <a class="nav-link mb-3 p-3 shadow pointer" [ngClass]="{'active': actualOption === 4}" (click)="optionSelected(4)">
+                      <span class="font-weight-bold small text-uppercase">En persona</span></a>
+              </div>
+          </div>
           <div class="col-md-9">
               <!-- Tabs content -->
               <div class="tab-content"  id="tab-content">
@@ -29,8 +41,7 @@
                     Cada uno debe dar seg&uacute;n crea que deba hacerlo. No tenemos que dar con tristeza ni por obligaci&oacute;n. ¡Dios ama al que da con alegr&iacute;a!
                 <br><b> 2 Corintios 9:7</b></p>
                 </div>
-                
-                  <div class="tab-pane fade shadow rounded bg-white show p-5" id="transfer" [ngClass]="{'active show': actualOption === 1}">
+                <div class="tab-pane fade shadow rounded bg-white show p-5" id="transfer" [ngClass]="{'active show': actualOption === 1}">
                       <h4 class="font-italic mb-4">Puedes hacer una transferencia a las siguientes cuentas</h4>
                       <p class="font-italic text-muted mb-2 text-left">
                           <li class="pt-1">1911-5735-601045 <b> S/ (Bcp)</b></li>
@@ -38,7 +49,7 @@
                           <li class="pt-1">8983-1514-32362 <b> S/ (Interbank)</b></li>
                           <li class="pt-1">0011-0174-0200711995 <b>S/ (Bbva)</b></li>
                       </p>
-                  </div>
+                </div>
                   
                   <div class="tab-pane fade shadow rounded bg-white p-5"  id="transfer-inter" [ngClass]="{'active show': actualOption === 2}">
                     <h4 class="font-italic mb-4">Puedes hacer una transferencia interbancaria a las siguientes cuentas</h4>

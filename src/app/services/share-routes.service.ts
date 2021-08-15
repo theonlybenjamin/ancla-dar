@@ -7,10 +7,18 @@ import { of } from 'rxjs';
 export class ShareRoutesService {
 
   public isOnGive = false;
-
+  private isOnMobile: boolean;
   constructor() { }
 
   public getIsOnGive() {
     return of(this.isOnGive);
+  }
+
+  get isOnMobileDevice(){
+    return this.isOnMobile;
+  }
+
+  public setIsOnMobile(param: boolean){
+    this.isOnMobile = param;
   }
 }
